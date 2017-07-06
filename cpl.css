@@ -1,0 +1,61 @@
+body {
+    /*font-family: 'PT Sans', sans-serif;*/
+    font-family: 'Contrail One', cursive;
+    background-image: url("sativa.png");
+    background-repeat:repeat;
+}
+
+#nav-area {
+    background: #6FBB1B;
+    background-image: url("green.jpeg");
+    background-size: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+
+.row .col.s12 {
+    width: 98%;
+    margin-left: 10px;
+    left: auto;
+}
+
+#headerimg {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    background-image: url("mountain.jpg");
+    background-attachment: fixed;
+    background-image-size: 100%;
+    height: 300px;
+}
+
+.col.s4.one {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+    left: auto;
+    background: #FBCF0A;
+    font-size: cover;
+}
+
+.col.s4.two {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    left: auto;
+    background: #FBCF0A;
+    font-size: cover;
+}
+
+.col.s4.three {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    width: 313px;
+    left: auto;
+    background: #FBCF0A;
+    font-size: cover;
+}
