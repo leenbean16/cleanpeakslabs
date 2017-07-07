@@ -102,7 +102,7 @@ a:hover{
     font-size: cover;
 }
 
-.col.s4.three {
+.col.s3.three {
     font-size: 30px;
     text-shadow: 2px 2px #ccc9c9;
     text-align: center;
@@ -256,7 +256,11 @@ textarea.materialize-textarea {
 @media only screen and (max-width: 320px) {
     body {
 .container {
-    width:100%;
+    width:320px;
     height: 100%;
+}
+div#headerimg{
+    width:300px;
+    margin-left: 0px;
 }
 }
