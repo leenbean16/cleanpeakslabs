@@ -1,0 +1,22 @@
+{
+  "name": "cleanpeakslabs",
+  "version": "1.0.0",
+  "description": "cleanpeakslabs",
+  "main": "cpl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leenbean16/cleanpeakslabs.git"
+  },
+  "author": "Lina Shamoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leenbean16/cleanpeakslabs/issues"
+  },
+  "homepage": "https://github.com/leenbean16/cleanpeakslabs#readme",
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}

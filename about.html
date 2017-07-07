@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="cpl.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean Peaks Labs</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div id="nav-area" class="nav-wrapper">
+                <div class="brand-logo">
+                    <p style='font-weight: bold;'>Clean Peaks Labs</p>
+                </div>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html" id="home-btn">Home</a></li>
+                    <li><a href="about.html" id="about-btn">About Us</a></li>
+                    <li><a href="services.html" id="services-btn">Services</a></li>
+                    <li><a id="modal-btn">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div id="headerimg" class="col s12 left">
+
+            </div>
+
+        </div>
+        <div id="about-title" class="row">
+            <p>About Us</p>
+        </div>
+        <div class="row">
+            <div class="col s6 one">
+                <div class="row">
+                    <div class="col s12 m7">
+                        <div class="card hoverable animated fadeIn">
+                            <div class="card-image">
+                                <img src="stephen.jpg">
+                                <span class="card-title">Stephen Madden</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi minima debitis, vitae repudiandae veniam dolore? Impedit atque a in esse, illo aspernatur corporis qui fugiat optio molestias, eveniet, laudantium eligendi!
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 two">
+                <div class="row">
+                    <div class="col s12 m7">
+                        <div class="card hoverable animated fadeIn">
+                            <div class="card-image">
+                                <img src="chris.jpg">
+                                <span class="card-title">Chris Russell</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi minima debitis, vitae repudiandae veniam dolore? Impedit atque a in esse, illo aspernatur corporis qui fugiat optio molestias, eveniet, laudantium eligendi!
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4 four">
+                <strong>Connect</strong>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+            <div class="col s4 five">
+                <strong>Company</strong>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Press</li>
+                    <li>Legal</li>
+                    <li>Careers</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="col s4 six">
+                <strong>Contact Us</strong>
+                <ul>
+                    <li>SMadden@cleanpeakslabs.com</li>
+                    <li>CRussell@cleanpeakslabs.com</li>
+                    <li>(707)123-4567</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer hoverable">
+        <div class="modal-content">
+            <h4>Login/Sign Up</h4>
+            <p class="sign-in-p">If you already have an account, sign in. If not, create an account.</p>
+            <div id="modal-form" class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Username" id="user-name" type="text" class="validate">
+                    <label class="form-text" for="first_name"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Email" id="email" type="email" class="validate">
+                    <label class="form-text" for="email"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Password" id="password" type="password" class="validate">
+                    <label class="form-text" for="password"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Password2" id="password2" type="password" class="validate2">
+                    <label class="form-text" for="password"></label>
+                </div>
+                <a id="form-button" class="waves-effect waves-light btn sign-in-btn">Sign In</a>
+                <a id="form-button" class="waves-effect waves-light btn sign-up-btn">Sign Up</a>
+                <a id="form-button" class="waves-effect waves-light btn back-btn">Back</a>
+                <a id="form-button" class="waves-effect waves-light btn submit-btn">Submit</a>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="cpl.js"></script>
+</body>
+
+</html>
