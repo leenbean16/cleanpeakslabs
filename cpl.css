@@ -5,8 +5,8 @@ body {
     background-repeat: repeat;
 }
 
-li{
-	color:darkgray;
+li {
+    color: darkgray;
 }
 
 #nav-area {
@@ -17,6 +17,18 @@ li{
     padding: 10px;
 }
 
+.clean {
+    color: black;
+}
+
+.peaks {
+    color: yellow;
+}
+
+.labs {
+    color: white;
+}
+
 .row .col.s12 {
     width: 98%;
     margin-left: 10px;
@@ -25,6 +37,7 @@ li{
 
 .container {
     background: white;
+    height: 100%;
 }
 
 #headerimg {
@@ -41,30 +54,33 @@ li{
 
 .col.s4.one {
     font-size: 30px;
+    text-shadow: 2px 2px #ccc9c9;
     text-align: center;
     font-weight: bold;
     margin-left: 10px;
     left: auto;
-    background: #ffdd49;
+    background: #FFFFFF;
     font-size: cover;
 }
 
 .col.s4.two {
     font-size: 30px;
+    text-shadow: 2px 2px #ccc9c9;
     text-align: center;
     font-weight: bold;
     left: auto;
-    background: #ffdd49;
+    background: #FFFFFF;
     font-size: cover;
 }
 
 .col.s4.three {
     font-size: 30px;
+    text-shadow: 2px 2px #ccc9c9;
     text-align: center;
     font-weight: bold;
     width: 313px;
     left: auto;
-    background: #ffdd49;
+    background: #FFFFFF;
     font-size: cover;
 }
 
@@ -72,22 +88,22 @@ li{
     margin-left: 10px;
     text-align: right;
     background: #f2f2f2;
-    padding-top:20px;
-    height:200px;
+    padding-top: 20px;
+    height: 200px;
 }
 
 .col.s4.five {
     text-align: right;
     background: #f2f2f2;
-    padding-top:20px;
-    height:200px;
+    padding-top: 20px;
+    height: 200px;
 }
 
 .col.s4.six {
     text-align: right;
     background: #f2f2f2;
-    padding-top:20px;
-    height:200px;
+    padding-top: 20px;
+    height: 200px;
     width: 313px;
 }
 
@@ -148,11 +164,45 @@ textarea.materialize-textarea {
 }
 
 .input-field {
-	margin-left: 0px !important;
+    margin-left: 0px !important;
     position: relative;
     margin-top: 0rem;
 }
 
-#form-button{
-	margin-left: 5px;
+#form-button {
+    margin-left: 5px;
+}
+
+
+/*=======================================*/
+
+
+/*about us page*/
+
+
+/*=======================================*/
+
+#about-title p{
+    font-size: 30px;
+    text-shadow: 2px 2px #ccc9c9;
+    text-align: center;
+    font-weight: bold;
+    background: #FFFFFF;
+    font-size: cover;
+}
+
+.col.s6.two {}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
 }
