@@ -10,6 +10,10 @@ li {
     color: darkgray;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 #nav-area {
     background: #6FBB1B;
     background-image: url("green.jpeg");
@@ -218,4 +222,19 @@ textarea.materialize-textarea {
 
 .fadeIn {
   animation-name: fadeIn;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0)
+    }
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp
 }
