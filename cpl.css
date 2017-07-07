@@ -3,6 +3,7 @@ body {
     font-family: 'Contrail One', cursive;
     background-image: url("sativa.png");
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 li {
@@ -48,6 +49,18 @@ li {
     color: yellow;
     background-repeat: no-repeat;
     background-image: url(mntn.png);
+    height: 300px;
+    background-size: 100%;
+}
+
+#services-img {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    background-repeat: no-repeat;
+    background-image: url(weed.png);
     height: 300px;
     background-size: 100%;
 }

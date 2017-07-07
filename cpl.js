@@ -24,6 +24,10 @@ let submitBtn = $('.submit-btn').hide();
  
 // connection.end();
 
+$('.head').on('click', function() {
+Materialize.toast('Clean Peaks Labs Gets It Right!', 4000)
+});
+
 $('#modal-btn').on('click', function() {
     $(accountModal).fadeIn("fast", function() {});
 });
