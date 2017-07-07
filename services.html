@@ -33,91 +33,95 @@
             </div>
         </nav>
         <div class="row">
-            <div id="services-img" class="col s12 left animated fadeInDown">
+            <div id="services-img" class="col s12 left animated fadeInLeft">
 
             </div>
-        </div>
-        <div id="about-title" class="row">
-            <p>Services</p>
-        </div>
-        <div class="row">
-            <div class="col s4 four">
-                <strong>Connect</strong>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>LinkedIn</li>
-                </ul>
+            <div class="row">
+                <div id="services-img-two" class="col s12 left animated fadeInRight">
+
+                </div>
             </div>
-            <div class="col s4 five">
-                <strong>Company</strong>
-                <ul>
-                    <li>FAQ</li>
-                    <li>Press</li>
-                    <li>Legal</li>
-                    <li>Careers</li>
-                    <li>Contact Us</li>
-                </ul>
+            <div id="about-title" class="row">
+                <p>Services</p>
             </div>
-            <div class="col s4 six">
-                <strong>Contact Us</strong>
-                <ul>
-                    <li>
-                    <a href="mailto:SMadden@cleanpeakslabs.com?Subject=Hello%20again" target="_top">SMadden@cleanpeakslabs.com</a>
-                    </li>
-                    <li>
-                    <a href="mailto:CRussell@cleanpeakslabs.com?Subject=Hello%20again" target="_top">CRussell@cleanpeakslabs.com</a>
-                    </li>
-                    <li>(707)123-4567</li>
-                </ul>
+            <div class="row">
+                <div class="col s4 four">
+                    <strong>Connect</strong>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+                <div class="col s4 five">
+                    <strong>Company</strong>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Press</li>
+                        <li>Legal</li>
+                        <li>Careers</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col s4 six">
+                    <strong>Contact Us</strong>
+                    <ul>
+                        <li>
+                            <a href="mailto:SMadden@cleanpeakslabs.com?Subject=Hello%20again" target="_top">SMadden@cleanpeakslabs.com</a>
+                        </li>
+                        <li>
+                            <a href="mailto:CRussell@cleanpeakslabs.com?Subject=Hello%20again" target="_top">CRussell@cleanpeakslabs.com</a>
+                        </li>
+                        <li>(707)123-4567</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal modal-fixed-footer hoverable">
-        <div class="modal-content">
-            <h4>Login/Sign Up</h4>
-            <p class="sign-in-p">If you already have an account, sign in. If not, create an account.</p>
-            <div id="modal-form" class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Username" id="user-name" type="text" class="validate">
-                    <label class="form-text" for="first_name"></label>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer hoverable">
+            <div class="modal-content">
+                <h4>Login/Sign Up</h4>
+                <p class="sign-in-p">If you already have an account, sign in. If not, create an account.</p>
+                <div id="modal-form" class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Username" id="user-name" type="text" class="validate">
+                        <label class="form-text" for="first_name"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Email" id="email" type="email" class="validate">
+                        <label class="form-text" for="email"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Password" id="password" type="password" class="validate">
+                        <label class="form-text" for="password"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Password2" id="password2" type="password" class="validate2">
+                        <label class="form-text" for="password"></label>
+                    </div>
+                    <a id="form-button" class="waves-effect waves-light btn sign-in-btn">Sign In</a>
+                    <a id="form-button" class="waves-effect waves-light btn sign-up-btn">Sign Up</a>
+                    <a id="form-button" class="waves-effect waves-light btn back-btn">Back</a>
+                    <a id="form-button" class="waves-effect waves-light btn submit-btn">Submit</a>
+                    </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Email" id="email" type="email" class="validate">
-                    <label class="form-text" for="email"></label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Password" id="password" type="password" class="validate">
-                    <label class="form-text" for="password"></label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Password2" id="password2" type="password" class="validate2">
-                    <label class="form-text" for="password"></label>
-                </div>
-                <a id="form-button" class="waves-effect waves-light btn sign-in-btn">Sign In</a>
-                <a id="form-button" class="waves-effect waves-light btn sign-up-btn">Sign Up</a>
-                <a id="form-button" class="waves-effect waves-light btn back-btn">Back</a>
-                <a id="form-button" class="waves-effect waves-light btn submit-btn">Submit</a>
-                </form>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
             </div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
-        </div>
-    </div>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="cpl.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="cpl.js"></script>
 </body>
 
 </html>

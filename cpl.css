@@ -69,6 +69,18 @@ a:hover{
     background-size: 100%;
 }
 
+#services-img-two {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    margin-left: 22px;
+    background-repeat: no-repeat;
+    background-image: url(vsteve.jpg);
+    height: 300px;
+    background-size: 97.7%;
+}
+
 .col.s4.one {
     font-size: 30px;
     text-shadow: 2px 2px #ccc9c9;
@@ -199,11 +211,13 @@ textarea.materialize-textarea {
 
 /*=======================================*/
 
-#about-title p{
+#about-title p {
     font-size: 30px;
     text-shadow: 2px 2px #ccc9c9;
     text-align: center;
     font-weight: bold;
+    width: 98%;
+    margin-left: 13px;
     background: #FFFFFF;
     font-size: cover;
 }
