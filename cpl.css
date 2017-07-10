@@ -176,6 +176,11 @@ p{
     padding-right: 50px;
 }
 
+.docs{
+    font-size: 18px;
+
+}
+
 .modal.modal-fixed-footer {
     padding: 0;
     height: 50%;
