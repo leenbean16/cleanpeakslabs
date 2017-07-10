@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="cpl.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean Peaks Labs</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div id="nav-area" class="nav-wrapper">
+                <div class="brand-logo">
+                    <p class="head" style='font-weight: bold;'>Clean Peaks Labs</p>
+                </div>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html" id="home-btn">Home</a></li>
+                    <li><a href="about.html" id="about-btn">About Us</a></li>
+                    <li><a href="services.html" id="services-btn">Services</a></li>
+                    <li><a href="docs.html" id="docs-btn">Documentation</a></li>
+                    <li><a id="modal-btn">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col l12 docs">
+                <p class="docs" style='font-weight: bold; font-size: 30px; text-align: center;'>Documentation</p>
+                <ul>
+                    <p>We believe in transparency. As this industry is in its infancy, standards need to be in place and the science needs to be repeatable. Therefore, we will release any of our documentation upon request. Our methods are sound, and we would
+                        not only like to share our methods and validation reports, but we would like to be the industry standard.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="guywreceptorspic">
+            <img class="cannabis" src="cannabinoid.png">
+        </div>
+
+        <div class="row">
+            <div class="col l12">
+                <table>
+                    <tr>
+                        <th>THC (∆9-Tetrahydrocannabinol)</th>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td>Strongly psychoactive (induces a euphoric high)</td>
+                        </tr>
+                        <tr>
+                            <td>Most cannabis strains are bred to contain a high THC content while other cannabinoids occur only in trace amounts demonstrates promise in treating pain, nausea, sleep and stress disorders, and appetite loss</td>
+                        </tr>
+                        <tr>
+                            <td>Can cause anxiety and paranoia in some individuals</td>
+                        </tr>
+                        <tr>
+                            <td>Boiling point: 315 °F (157 °C)</td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12">
+                <table>
+                    <tr>
+                        <th>THCV (Tetrahydrocannabivarin)</th>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td>Strongly psychoactive (induces a euphoric high)</td>
+                        </tr>
+                        <tr>
+                            <td>More strongly psychoactive than THC, but duration of effects is about half as long</td>
+                        </tr>
+                        <tr>
+                            <td>Typically occurs in only trace amounts in cannabis</td>
+                        </tr>
+                        <tr>
+                            <td>Pronounced energetic effects</td>
+                        </tr>
+                        <tr>
+                            <td>Found to effectively counter anxiety, stress, and panic disorders without suppressing emotion</td>
+                        </tr>
+                        <tr>
+                            <td>Reduces tremors associated with Alzheimer’s, Parkinson’s, and other neurological disorders</td>
+                        </tr>
+                        <tr>
+                            <td>Diminishes appetite</td>
+                        </tr>
+                        <tr>
+                            <td>Stimulates bone growth</td>
+                        </tr>
+                    </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12">
+                <table>
+                    <tr>
+                        <th>CBD (Cannabidiol)</th>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td>Non-psychoactive (does not induce a euphoric high)</td>
+                        </tr>
+                        <tr>
+                            <td>Counteracts psychoactivity of THC
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Calming effect helpful for those treating anxiety and sleep loss</td>
+                        </tr>
+                        <tr>
+                            <td>Lowers blood sugar</td>
+                        </tr>
+                        <tr>
+                            <td>Demonstrates promise in treating pain, multiple sclerosis, inflammation, stress disorders, and epilepsy</td>
+                        </tr>
+                        <tr>
+                            <td>Boiling point: 356 °F (180 °C)</td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12">
+                <table>
+                    <tr>
+                        <th>CBDV (Cannabidivarin)</th>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td>Non-psychoactive (does not induce a euphoric high)</td>
+                        </tr>
+                        <tr>
+                            <td>Demonstrates promise in treating seizures
+                            </td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12">
+                <table>
+                    <tr>
+                        <th>CBG (Cannabigerol)</th>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td>Non-psychoactive (does not induce a euphoric high)</td>
+                        </tr>
+                        <tr>
+                            <td>Typically occurs in only trace amounts in cannabis
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Found to stimulate brain cell and bone growth</td>
+                        </tr>
+                        <tr>
+                            <td>Demonstrates promise as an anti-bacterial and anti-insomnia medicine</td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12">
+                <table>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12">
+                <table>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12">
+                <table>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12">
+                <table>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12">
+                <table>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+        <div class="row foot">
+            <div class="col l4 four">
+                <strong>Connect</strong>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+            <div class="col l4 five">
+                <strong>Company</strong>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Press</li>
+                    <li>Legal</li>
+                    <li>Careers</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="col l4 six">
+                <strong>Contact Us</strong>
+                <ul>
+                    <li>
+                        <a href="mailto:SMadden@cleanpeakslabs.com?Subject=CleanPeaksLabs%20Info" target="_top">SMadden@cleanpeakslabs.com</a>
+                    </li>
+                    <li>
+                        <a href="mailto:CRussell@cleanpeakslabs.com?Subject=CleanPeaksLabs%20Info" target="_top">CRussell@cleanpeakslabs.com</a>
+                    </li>
+                    <li>(707)123-4567</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer hoverable">
+        <div class="modal-content">
+            <h4>Login/Sign Up</h4>
+            <p class="sign-in-p">If you already have an account, sign in. If not, create an account.</p>
+            <div id="modal-form" class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Username" id="user-name" type="text" class="validate">
+                    <label class="form-text" for="first_name"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Email" id="email" type="email" class="validate">
+                    <label class="form-text" for="email"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Password" id="password" type="password" class="validate">
+                    <label class="form-text" for="password"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Password2" id="password2" type="password" class="validate2">
+                    <label class="form-text" for="password"></label>
+                </div>
+                <a id="form-button" class="waves-effect waves-light btn sign-in-btn">Sign In</a>
+                <a id="form-button" class="waves-effect waves-light btn sign-up-btn">Sign Up</a>
+                <a id="form-button" class="waves-effect waves-light btn back-btn">Back</a>
+                <a id="form-button" class="waves-effect waves-light btn submit-btn">Submit</a>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="cpl.js"></script>
+</body>
+
+</html>
