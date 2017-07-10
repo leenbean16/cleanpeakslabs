@@ -171,6 +171,11 @@ p{
     color:black;
 }
 
+.col.l12.docs{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .modal.modal-fixed-footer {
     padding: 0;
     height: 50%;
