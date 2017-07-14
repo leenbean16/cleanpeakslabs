@@ -67,6 +67,3 @@ $(backBtn).on('click', function() {
     $('.back-btn').hide();
     $('.submit-btn').hide();
 })
-
-
-
