@@ -4,6 +4,7 @@ use cleanpeakslabs;
 
 CREATE TABLE users(
    ID INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   First_Last VARCHAR(30) NOT NULL,
    User_Name VARCHAR(30) NOT NULL,
    Company VARCHAR(30) NOT NULL,
    Address VARCHAR(30) NOT NULL,
@@ -26,7 +27,7 @@ CREATE TABLE Test_Results(
     d9_THC FLOAT NOT NULL,
     CBD FLOAT NOT NULL,
     CBN_ FLOAT NOT NULL,
-	a_Pinene FLOAT NOT NULL,
+	  a_Pinene FLOAT NOT NULL,
     b_Pinene FLOAT NOT NULL,
     Limonene FLOAT NOT NULL,
     Linalool FLOAT NOT NULL,

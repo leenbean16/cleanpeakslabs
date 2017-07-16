@@ -283,6 +283,10 @@ th {
     color: white;
 }
 
+form{
+    border: 1px solid black;
+}
+
 
 /*=======================================*/
 
