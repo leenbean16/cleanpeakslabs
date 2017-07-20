@@ -1,3 +1,6 @@
+var $ = require("jquery")(window);
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 let accountModal = $('#modal1').hide();
 let usernameInput = $('#user-name').hide();
 let emailInput = $('#email').hide();
@@ -6,26 +9,11 @@ let password2 = $('#password2').hide();
 let backBtn = $('.back-btn').hide();
 let submitBtn = $('.submit-btn').hide();
 
-// msql
-// var mysql      = require('mysql');
-// var connection = mysql.createConnection({
-//   host     : 'localhost',
-//   user     : 'root',
-//   password : 'display:none;',
-//   database : 'cpl'
-// });
- 
-// connection.connect();
- 
-// connection.query('SELECT * FROM users', function (error, results, fields) {
-//   if (error) throw error;
-//   console.log('The solution is: ', results[0].solution);
-// });
- 
-// connection.end();
+const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
+console.log(dom.window.document.querySelector("p").textContent);
 
 $('.head').on('click', function() {
-Materialize.toast('Clean Peaks Labs Gets It Right!', 4000)
+    Materialize.toast('Clean Peaks Labs Gets It Right!', 4000)
 });
 
 $('#modal-btn').on('click', function() {

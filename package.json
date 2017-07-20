@@ -2,7 +2,7 @@
   "name": "cleanpeakslabs",
   "version": "1.0.0",
   "description": "cleanpeakslabs",
-  "main": "cpl.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,10 +18,15 @@
   "homepage": "https://github.com/leenbean16/cleanpeakslabs#readme",
   "dependencies": {
     "animate.css": "^3.5.2",
+    "cli-table": "^0.3.1",
     "colors": "^1.1.2",
     "http": "0.0.0",
+    "inquirer": "^3.2.0",
     "jquery": "^3.2.1",
     "jsdom": "^11.1.0",
+    "math": "0.0.3",
+    "mysql": "^2.13.0",
+    "passport": "^0.3.2",
     "url": "^0.11.0"
   }
 }

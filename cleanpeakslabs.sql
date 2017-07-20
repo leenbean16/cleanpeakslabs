@@ -1,9 +1,13 @@
+drop database cleanpeakslabs;
+
 create database cleanpeakslabs;
 
 use cleanpeakslabs;
 
-CREATE TABLE users(
-   ID INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+select * from user;
+
+CREATE TABLE user(
+   ID INT UNSIGNED NOT NULL AUTO_INCREMENT,
    First_Last VARCHAR(30) NOT NULL,
    User_Name VARCHAR(30) NOT NULL,
    Company VARCHAR(30) NOT NULL,
@@ -15,8 +19,12 @@ CREATE TABLE users(
    Phone_Number VARCHAR(20) NOT NULL,
    Date TIMESTAMP,
    Services_Requested MEDIUMINT NOT NULL,
-   Samples_Deposited MEDIUMINT NOT NULL);
+   Samples_Deposited MEDIUMINT NOT NULL,
+   PRIMARY KEY (ID)
+   );
 
+INSERT INTO user (First_Last, User_Name, Company, Address, City, State, Zip_Code, Email, Phone_Number, Services_Requested, Samples_Deposited)
+value("Lina", "leenbean16", "leenbean & co", "2645 W Canyon Ave", "San Diego", "CA", 92123, "shamoonlina@gmail.com", 2485252667, 1, 2);
 
 CREATE TABLE Test_Results(
     ID INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
