@@ -4,7 +4,8 @@
   "description": "cleanpeakslabs",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "inquirer": "^3.2.0",
     "jquery": "^3.2.1",
     "jsdom": "^11.1.0",
+    "latest-version": "^3.1.0",
     "math": "0.0.3",
     "mysql": "^2.13.0",
     "passport": "^0.3.2",
