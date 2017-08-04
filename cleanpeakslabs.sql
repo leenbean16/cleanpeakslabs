@@ -4,9 +4,9 @@ create database cleanpeakslabs;
 
 use cleanpeakslabs;
 
-select * from user;
+select * from userTable;
 
-CREATE TABLE user(
+CREATE TABLE userTable(
    ID INT UNSIGNED NOT NULL AUTO_INCREMENT,
    First_Last VARCHAR(30) NOT NULL,
    User_Name VARCHAR(30) NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE user(
    PRIMARY KEY (ID)
    );
 
-INSERT INTO user (First_Last, User_Name, Company, Address, City, State, Zip_Code, Email, Phone_Number, Services_Requested, Samples_Deposited)
+INSERT INTO userTable (First_Last, User_Name, Company, Address, City, State, Zip_Code, Email, Phone_Number, Services_Requested, Samples_Deposited)
 value("Lina", "leenbean16", "leenbean & co", "2645 W Canyon Ave", "San Diego", "CA", 92123, "shamoonlina@gmail.com", 2485252667, 1, 2);
 
 CREATE TABLE Test_Results(
@@ -35,7 +35,7 @@ CREATE TABLE Test_Results(
     d9_THC FLOAT NOT NULL,
     CBD FLOAT NOT NULL,
     CBN_ FLOAT NOT NULL,
-	  a_Pinene FLOAT NOT NULL,
+	a_Pinene FLOAT NOT NULL,
     b_Pinene FLOAT NOT NULL,
     Limonene FLOAT NOT NULL,
     Linalool FLOAT NOT NULL,

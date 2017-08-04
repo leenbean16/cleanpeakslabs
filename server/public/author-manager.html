@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CMS - Express</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row top-30">
+      <div class="col-md-2 col-sm-2">
+        <a class="btn btn-default" href="/blog">Go to Blog</a>
+      </div>
+			<div class="col-md-2 col-sm-2">
+        <a class="btn btn-default" href="/cms">New Post</a>
+      </div>
+    </div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="author-container">
+					<h1>Authors</h1>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th># of Posts</th>
+								<th>See Author's Posts</th>
+								<th>New Post</th>
+								<th>Delete Author</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="form-row">
+								<form id="author-form">
+									<td colspan="4">
+										<input placeholder="Enter a name" id="author-name" type="text" />
+									</td>
+									<td><button type="submit" class="btn btn-success">Create Author</button>
+									</td>
+								</form>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		</d>
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal modal-fixed-footer hoverable">
+		    <div class="modal-content">
+		        <h4>Login/Sign Up</h4>
+		        <p class="sign-in-p">If you already have an account, sign in. If not, create an account.</p>
+		        <div id="modal-form" class="row">
+		            <div class="input-field col s12">
+		                <input placeholder="Username" id="user-name" type="text" class="validate">
+		                <label class="form-text" for="first_name"></label>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="input-field col s12">
+		                <input placeholder="Email" id="email" type="email" class="validate">
+		                <label class="form-text" for="email"></label>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="input-field col s12">
+		                <input placeholder="Password" id="password" type="password" class="validate">
+		                <label class="form-text" for="password"></label>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="input-field col s12">
+		                <input placeholder="Password2" id="password2" type="password" class="validate2">
+		                <label class="form-text" for="password"></label>
+		            </div>
+		            <a id="form-button" class="waves-effect waves-light btn sign-in-btn">Sign In</a>
+		            <a id="form-button" class="waves-effect waves-light btn sign-up-btn">Sign Up</a>
+		            <a id="form-button" class="waves-effect waves-light btn back-btn">Back</a>
+		            <a id="form-button" class="waves-effect waves-light btn submit-btn">Submit</a>
+		            </form>
+		        </div>
+		    </div>
+		    <div class="modal-footer">
+		        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
+		    </div>
+		</div>
+		<!-- Custom Script -->
+		<script src="js/author.js" type="text/javascript"></script>
+
+</body>
+
+</html>
