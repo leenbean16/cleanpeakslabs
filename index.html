@@ -3,6 +3,7 @@
 <html>
 
 <head>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
@@ -51,49 +52,51 @@
         <div id="weedpng" class="container">
             <div class="row">
                 <div class="col s11 l12">
-                    <p class="home-p">Clean Peaks Laboratories is committed to providing the medical and recreational cannabis community with fast, reliable quantification of their samples. Currently, we offer three services: Primary Cannabinoid (d9-THC, CBD, and CBN) Quantification, Primary Terpene (alpha & beta pinene, limonene, linalool, and beta-caryophyllene) Quantification, and Residual Solvent Quantification. We are new in the cannabis testing space. We are excited to be a part of the cannabis testing community, and as we scale up we will provide more services.
+                    <p class="home-p">Clean Peaks Laboratories is committed to providing the medical and recreational cannabis community with fast, reliable quantification of their samples. Currently, we offer three services: Primary Cannabinoid (d9-THC, CBD, and CBN)
+                        Quantification, Primary Terpene (alpha & beta pinene, limonene, linalool, and beta-caryophyllene) Quantification, and Residual Solvent Quantification. We are new in the cannabis testing space. We are excited to be a part of the
+                        cannabis testing community, and as we scale up we will provide more services.
                     </p>
                 </div>
             </div>
         </div>
 
-            <div class="row foot">
-        <div class="col s6 l4 four">
-            <ul>
-                <li> - </li>
-                <strong>Connect</strong>
-                <li><a href="https://www.instagram.com/cleanpeakslabs/">Instagram</a></li>
-                <li>Twitter</li>
-                <li>Facebook</li>
-                <li>LinkedIn</li>
-                <li><a href="http://lilpalmtree.com">Developer</a></li>
-            </ul>
+        <div class="row foot">
+            <div class="col s6 l4 four">
+                <ul>
+                    <li> - </li>
+                    <strong>Connect</strong>
+                    <li><a href="https://www.instagram.com/cleanpeakslabs/">Instagram</a></li>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                    <li>LinkedIn</li>
+                    <li><a href="http://lilpalmtree.com">Developer</a></li>
+                </ul>
+            </div>
+            <div class="col s6 l4 five">
+                <ul>
+                    <li> - </li>
+                    <strong>Company</strong>
+                    <li>FAQ</li>
+                    <li>Press</li>
+                    <li>Legal</li>
+                    <li>Careers</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="col s12 l4 six">
+                <ul>
+                    <li> - </li>
+                    <strong>Contact Us</strong>
+                    <li>
+                        <a href="mailto:SMadden@cleanpeakslabs.com?Subject=CleanPeaksLabs%20Info" target="_top">SMadden@cleanpeakslabs.com</a>
+                    </li>
+                    <li>
+                        <a href="mailto:CRussell@cleanpeakslabs.com?Subject=CleanPeaksLabs%20Info" target="_top">CRussell@cleanpeakslabs.com</a>
+                    </li>
+                    <li>(619)547-6737</li>
+                </ul>
+            </div>
         </div>
-        <div class="col s6 l4 five">
-            <ul>
-                <li> - </li>
-                <strong>Company</strong>
-                <li>FAQ</li>
-                <li>Press</li>
-                <li>Legal</li>
-                <li>Careers</li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
-        <div class="col s12 l4 six">
-            <ul>
-                <li> - </li>
-                <strong>Contact Us</strong>
-                <li>
-                    <a href="mailto:SMadden@cleanpeakslabs.com?Subject=CleanPeaksLabs%20Info" target="_top">SMadden@cleanpeakslabs.com</a>
-                </li>
-                <li>
-                    <a href="mailto:CRussell@cleanpeakslabs.com?Subject=CleanPeaksLabs%20Info" target="_top">CRussell@cleanpeakslabs.com</a>
-                </li>
-                <li>(619)547-6737</li>
-            </ul>
-        </div>
-    </div>
     </div>
     <!-- Modal Structure -->
     <div id="modal1" class="modal modal-fixed-footer hoverable">
@@ -114,8 +117,12 @@
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <input placeholder="Password" id="password" type="password" class="validate">
+                    <input placeholder="Password" id="Password" type="password" class="validate">
                     <label class="form-text" for="password"></label>
+                </div>
+                <div class="input-field col s12">
+                    <input placeholder="Password" id="Password2" type="password" class="validate">
+                    <label class="form-text" for="password2"></label>
                 </div>
             </div>
             <div class="row">
@@ -126,6 +133,7 @@
                 <a id="form-button" class="waves-effect waves-light btn sign-in-btn">Sign In</a>
                 <a id="form-button" class="waves-effect waves-light btn sign-up-btn">Sign Up</a>
                 <a id="form-button" class="waves-effect waves-light btn back-btn">Back</a>
+                <a id="form-button" class="waves-effect waves-light btn go-btn">Go</a>
                 <a id="form-button" class="waves-effect waves-light btn submit-btn" href="table.php">Submit</a>
                 </form>
             </div>

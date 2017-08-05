@@ -20,7 +20,7 @@
         <nav>
             <div id="nav-area" class="nav-wrapper">
                 <div class="brand-logo">
-                <img src="logo.png" style="width:120px;"></img>
+                    <img src="logo.png" style="width:120px;"></img>
                     <!-- <p class="head" style='font-weight: bold;'>Clean Peaks Labs</p> -->
                 </div>
 
@@ -33,29 +33,67 @@
                 </ul>
             </div>
         </nav>
-
-        <form>
-            Full Name:<br>
-            <input type="text" name="fullname"><br> Username:
-            <br>
-            <input type="text" name="username"> Company:
-            <br>
-            <input type="text" name="company"> Address:
-            <br>
-            <input type="text" name="address"> City:
-            <br>
-            <input type="text" name="city"> Zip-Code:
-            <br>
-            <input type="text" name="zipcode"> Email:
-            <br>
-            <input type="text" name="email"> Phone:
-            <br>
-            <input type="text" name="phone"> Service Requested:<br>
-            <input type="text" name="service"> Sample Deposited:<br>
-            <input type="text" name="sample">
-            <button class="table-one-btn">Submit</button>
-        </form>
-
+        <div id="order">
+            Order Form
+        </div>
+        <ul>
+            <form>
+                <li></li>
+                Full Name:
+                <li><input type="text" name="fullname"></li>
+                <li></li>
+                Username:
+                <li><input type="text" name="username"></li>
+                <li></li>
+                Company:
+                <li><input type="text" name="company"></li>
+                <li></li>
+                Address:
+                <li><input type="text" name="address"></li>
+                <li></li>
+                City:
+                <li><input type="text" name="city"></li>
+                <li></li>
+                Zip-Code:
+                <li><input type="text" name="zip"></li>
+                <li></li>
+                Email:
+                <li><input type="text" name="email"></li>
+                <li></li>
+                Phone:
+                <li><input type="text" name="phone"></li>
+                <li></li>
+                Service Requested:
+                <li></li>
+                <li></li>
+                <p></p><input type="checkbox" id="test5" />
+                <label for="test5">Primary Potency</label></li>
+                <li></li>
+                <p></p><input type="checkbox" id="test6" />
+                <label for="test6">Primary Terpene Testing</label></li>
+                <li></li>
+                <p></p><input type="checkbox" id="test7" />
+                <label for="test7">Residual Solvents Testing</label></li>
+                <li></li>
+                <a href="#!" id="stag" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Show Prices</a>
+                <li></li>
+                <ul id="staggered-test" class="stag">
+                    <li class="price">Primary Potency: $40</li>
+                    <li class="price">Primary Terpene Testing: $70</li>
+                    <li class="price">Residual Solvents Testing: $70</li>
+                </ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                Sample Deposited:
+                <li>
+                    <p></p><input type="text" name="sample"></li>
+                <li></li>
+                Phone:
+                <li><input type="text" name="phone"></li>
+                <li><button class="table-one-btn">Submit</button></li>
+            </form>
+        </ul>
         <div class="row foot">
             <div class="col l4 four">
                 <strong>Connect</strong>
@@ -64,6 +102,7 @@
                     <li>Twitter</li>
                     <li>Instagram</li>
                     <li>LinkedIn</li>
+                    <li><a href="http://lilpalmtree.com">Developer</a></li>
                 </ul>
             </div>
             <div class="col l4 five">
