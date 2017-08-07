@@ -416,6 +416,7 @@ textarea.materialize-textarea {
 }
 
 
+
 /*=======================================*/
 
 
@@ -433,6 +434,29 @@ textarea.materialize-textarea {
     background: #FFFFFF;
     font-size: cover;
 }
+
+
+
+/*////////////////////////////////////////////*/
+
+
+/*profile section*/
+
+
+/*////////////////////////////////////////////*/
+
+#left-section {
+    height: 500px;
+    margin-top: 20px;
+}
+
+#right-section {
+    height: 500px;
+    margin-top: 20px;
+}
+
+
+/*animations*/
 
 @keyframes fadeIn {
     from {

@@ -1,7 +1,7 @@
 let accountModal = $('#modal1').hide();
 let usernameInput = $('#user-name').hide();
 let emailInput = $('#email').hide();
-let password1 = $('#password').hide();
+let password1 = $('#password1').hide();
 let password2 = $('#password2').hide();
 let backBtn = $('.back-btn').hide();
 let submitBtn = $('.submit-btn').hide();
@@ -14,6 +14,8 @@ $('img').on('click', function() {
 });
 
 $('#modal-btn').on('click', function() {
+    $('#password1').hide();
+    $('#password2').hide();
     $(accountModal).fadeIn("fast", function() {});
 });
 
@@ -30,6 +32,7 @@ $('.modal-close').on('click', function() {
 $('.sign-in-btn').on('click', function() {
     $(emailInput).show();
     $(password1).show();
+    $('#password2').hide();
     $(goBtn).show();
     $('.sign-up-btn').hide();
     $(submitBtn).hide();
@@ -69,7 +72,7 @@ $(backBtn).on('click', function() {
     $('#user-name').hide();
     $(goBtn).hide();
     $('#email').hide();
-    $('#password').hide();
+    $('#password1').hide();
     $('#password2').hide();
     $('.back-btn').hide();
     $('.submit-btn').hide();
