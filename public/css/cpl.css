@@ -156,8 +156,8 @@ img.img-fluid {
 }
 
 #nav-area {
-    /*    background: #6FBB1B;*/
-    /*    background-image: url('../imgs/green.jpeg');*/
+/*        background: #b2ed6f;*/
+/*        background-image: url('../imgs/green.jpeg');*/
     background-size: 100%;
     padding-left: 5px;
     height: 67px;
@@ -622,6 +622,35 @@ li {
     color: black;
     float: initial;
     margin-left: 18px;
+}
+
+
+#primary{
+    background: #eee;
+    padding-top: 30px;
+    width:421px;
+    height:200px;
+    margin: 2px;
+}
+
+#terpene{
+    background: #eee;
+    padding-top: 30px;
+    width:425px;
+    height:200px;
+    margin: 2px;
+}
+
+#solvents{
+    background: #eee;
+    padding-top: 30px;
+    width:421px;
+    height:200px;
+    margin: 2px;
+}
+
+#service-row{
+    margin-top: 25px;
 }
 
 /*animations*/
