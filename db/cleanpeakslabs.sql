@@ -35,7 +35,7 @@ CREATE TABLE Test_Results(
     d9_THC FLOAT NOT NULL,
     CBD FLOAT NOT NULL,
     CBN_ FLOAT NOT NULL,
-	a_Pinene FLOAT NOT NULL,
+	  a_Pinene FLOAT NOT NULL,
     b_Pinene FLOAT NOT NULL,
     Limonene FLOAT NOT NULL,
     Linalool FLOAT NOT NULL,

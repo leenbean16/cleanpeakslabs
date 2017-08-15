@@ -18,9 +18,9 @@
 
 <body>
     <div class="container">
-    <!--  -->
-    <!-- nav -->
-    <!--  -->
+        <!--  -->
+        <!-- nav -->
+        <!--  -->
         <nav>
             <div id="nav-area" class="nav-wrapper">
                 <div class="brand-logo">
@@ -39,90 +39,130 @@
         <!--  -->
         <!-- body -->
         <!--  -->
-        <div class="row">
-            <div id="left-section" class="col l6 s12"><h5>Account Info</h5></div>
-            <div id="right-section" class="col l6 s12"><h5>Test History</h5></div>
-        </div>
-        <!--  -->
-        <!-- footer -->
-        <!--  -->
-        <div class="row foot">
-            <div class="col l4 four">
-                <strong>Connect</strong>
+            <ul id="tabs-swipe-demo" class="tabs">
+                <li id="tab1" class="tab col s3"><a href="#test-swipe-1">Account Information</a></li>
+                <li id="tab2" class="tab col s3"><a class="active" href="#test-swipe-2">Change Password</a></li>
+                <li id="tab3" class="tab col s3"><a href="#test-swipe-3">History</a></li>
+            </ul>
+            <div id="test-swipe-1" class="col s12 blue">
+                <h5>Account Info</h5>
                 <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>LinkedIn</li>
-                    <li><a href="http://lilpalmtree.com">Developer</a></li>
+                    <li>Username: </li>
+                    <li>First Name: </li>
+                    <li>Last Name: </li>
+                    <li>E-Mail: </li>
+                    <li>Member Since: </li>
                 </ul>
             </div>
-            <div class="col l4 five">
-                <strong>Company</strong>
+            <div id="test-swipe-2" class="col s12 red">
+                <h5>Change Password</h5>
                 <ul>
-                    <li>FAQ</li>
-                    <li>Press</li>
-                    <li>Legal</li>
-                    <li>Careers</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-            <div class="col l4 six">
-                <strong>Contact Us</strong>
-                <ul>
+                    <br>
+                    <li>Old Password</li>
                     <li>
-                        <a href="mailto:SMadden@cleanpeakslabs.com?Subject=CleanPeaksLabs%20Info" target="_top">SMadden@cleanpeakslabs.com</a>
+                        <input></input>
                     </li>
+                    <li>New Password: </li>
                     <li>
-                        <a href="mailto:CRussell@cleanpeakslabs.com?Subject=CleanPeaksLabs%20Info" target="_top">CRussell@cleanpeakslabs.com</a>
+                        <input></input>
                     </li>
-                    <li>(619)547-6737</li>
+                    <li>Verify New Password: </li>
+                    <li>
+                        <input></input>
+                    </li>
                 </ul>
             </div>
+        <div id="test-swipe-3" class="col s12 green">
+            <h5>Test History</h5>
+            <ul>
+                <li>Test Type:</li>
+                <li>Test Result: </li>
+            </ul>
         </div>
-    </div>
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal modal-fixed-footer hoverable">
-        <div class="modal-content">
-            <h4>Login/Sign Up</h4>
-            <p class="sign-in-p">If you already have an account, sign in. If not, create an account.</p>
-            <div id="modal-form" class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Username" id="user-name" type="text" class="validate">
-                    <label class="form-text" for="first_name"></label>
+        <br>
+        <br>
+        <br>
+        <br>
+            <!--  -->
+            <!-- footer -->
+            <!--  -->
+            <div class="row foot">
+                <div class="col l4 four">
+                    <strong>Connect</strong>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                        <li><a href="http://lilpalmtree.com">Developer</a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Email" id="email" type="email" class="validate">
-                    <label class="form-text" for="email"></label>
+                <div class="col l4 five">
+                    <strong>Company</strong>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Press</li>
+                        <li>Legal</li>
+                        <li>Careers</li>
+                        <li>Contact Us</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Password" id="password1" type="password" class="validate">
-                    <label class="form-text" for="password"></label>
+                <div class="col l4 six">
+                    <strong>Contact Us</strong>
+                    <ul>
+                        <li>
+                            <a href="mailto:SMadden@cleanpeakslabs.com?Subject=CleanPeaksLabs%20Info" target="_top">SMadden@cleanpeakslabs.com</a>
+                        </li>
+                        <li>
+                            <a href="mailto:CRussell@cleanpeakslabs.com?Subject=CleanPeaksLabs%20Info" target="_top">CRussell@cleanpeakslabs.com</a>
+                        </li>
+                        <li>(619)547-6737</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Password2" id="password2" type="password" class="validate2">
-                    <label class="form-text" for="password"></label>
-                </div>
-                <a id="form-button" class="waves-effect waves-light btn sign-in-btn">Sign In</a>
-                <a id="form-button" class="waves-effect waves-light btn sign-up-btn">Sign Up</a>
-                <a id="form-button" class="waves-effect waves-light btn back-btn">Back</a>
-                <a id="form-button" class="waves-effect waves-light btn submit-btn">Submit</a>
-                </form>
             </div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer hoverable">
+            <div class="modal-content">
+                <h4>Login/Sign Up</h4>
+                <p class="sign-in-p">If you already have an account, sign in. If not, create an account.</p>
+                <div id="modal-form" class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Username" id="user-name" type="text" class="validate">
+                        <label class="form-text" for="first_name"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Email" id="email" type="email" class="validate">
+                        <label class="form-text" for="email"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Password" id="password1" type="password" class="validate">
+                        <label class="form-text" for="password"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Password2" id="password2" type="password" class="validate2">
+                        <label class="form-text" for="password"></label>
+                    </div>
+                    <a id="form-button" class="waves-effect waves-light btn sign-in-btn">Sign In</a>
+                    <a id="form-button" class="waves-effect waves-light btn sign-up-btn">Sign Up</a>
+                    <a id="form-button" class="waves-effect waves-light btn back-btn">Back</a>
+                    <a id="form-button" class="waves-effect waves-light btn submit-btn">Submit</a>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
+            </div>
         </div>
-    </div>
-    <script type="text/javascript" src="../js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="mainJS/cpl.js"></script>
+        <script type="text/javascript" src="../js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="mainJS/cpl.js"></script>
 </body>
 
 </html>

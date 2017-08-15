@@ -8,7 +8,6 @@ let submitBtn = $('.submit-btn').hide();
 let goBtn = $('.go-btn').hide();
 let price = $('.price').hide();
 
-
 $('img').on('click', function() {
     Materialize.toast('Clean Peaks Labs Gets It Right!', 4000)
 });
