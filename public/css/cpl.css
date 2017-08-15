@@ -4,6 +4,24 @@ body {
     background-image: url("../imgs/sativa.png");
     background-repeat: repeat;
     background-attachment: fixed;
+    margin-top: -64px;
+}
+
+#menu-toggle {
+    visibility: hidden;
+}
+
+a {
+    color: black;
+}
+
+nav ul a {
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: green;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
 }
 
 .carousel .carousel-item {
@@ -138,8 +156,8 @@ img.img-fluid {
 }
 
 #nav-area {
-    background: #6FBB1B;
-    background-image: url('../imgs/green.jpeg');
+    /*    background: #6FBB1B;*/
+    /*    background-image: url('../imgs/green.jpeg');*/
     background-size: 100%;
     padding-left: 5px;
     height: 67px;
@@ -483,6 +501,7 @@ textarea.materialize-textarea {
 
 
 
+
 /*=======================================*/
 
 
@@ -504,6 +523,7 @@ textarea.materialize-textarea {
 li {
     color: black;
 }
+
 
 
 
@@ -529,6 +549,80 @@ li {
 
 
 
+/*hamburger menu*/
+
+#menu,
+.sub-menu {
+    display: none;
+    list-style: none;
+}
+
+
+/*Change toggle size by adjusting width & height*/
+
+.tb-menu-toggle {
+    border: 0;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/*Change toggle color here*/
+
+.tb-menu-toggle i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 17px;
+    height: 16%;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.tb-menu-toggle i:nth-child(2) {
+    top: 40%;
+}
+
+.tb-menu-toggle i:nth-child(3) {
+    top: 80%;
+}
+
+
+/* Style the active toggle here */
+
+.tb-menu-toggle.tb-active-toggle i {}
+
+
+/*Animation of the toggle*/
+
+.tb-menu-toggle.tb-animate-toggle i:first-child,
+.tb-menu-toggle.tb-animate-toggle i:nth-child(2) {
+    top: 40%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.tb-menu-toggle.tb-animate-toggle i:nth-child(3) {
+    top: 40%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#menu {
+    color: black;
+    float: initial;
+    margin-left: 18px;
+}
 
 /*animations*/
 
@@ -561,6 +655,9 @@ li {
 }
 
 @media only screen and (max-width: 320px) {
+    body{
+        margin-top: 0px;
+    }
     #headerimg {
         width: 275px;
         font-size: 14px;
@@ -570,6 +667,21 @@ li {
         background: #f2f2f2;
         padding-top: 20px;
         height: 200px;
-        width: 90%;
+        width: 100%;
     }
+    img.img-fluid {
+        display:none;
+    }
+    #services-img {
+        display:none;
+    }
+.services-title {
+    text-align: center;
+    margin-left: 45%;
+    padding-bottom: 0px;
+}
+#menu-toggle {
+    visibility: visible;
+}
+
 }

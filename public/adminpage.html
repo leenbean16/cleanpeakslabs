@@ -42,6 +42,9 @@
   <li><a href="docs.html">Sign In/Sign Up</a></li>              
 </ul>
     <div class="container">
+        <!--  -->
+        <!-- nav -->
+        <!--  -->
         <nav>
             <div id="nav-area" class="nav-wrapper">
                 <div class="brand-logo">
@@ -57,67 +60,55 @@
                 </ul>
             </div>
         </nav>
-        <div id="order">
-            Order Form
-        </div>
-        <ul>
-            <form>
-                <li></li>
-                Full Name:
-                <li><input type="text" name="fullname"></li>
-                <li></li>
-                Username:
-                <li><input type="text" name="username"></li>
-                <li></li>
-                Company:
-                <li><input type="text" name="company"></li>
-                <li></li>
-                Address:
-                <li><input type="text" name="address"></li>
-                <li></li>
-                City:
-                <li><input type="text" name="city"></li>
-                <li></li>
-                Zip-Code:
-                <li><input type="text" name="zip"></li>
-                <li></li>
-                Email:
-                <li><input type="text" name="email"></li>
-                <li></li>
-                Phone:
-                <li><input type="text" name="phone"></li>
-                <li></li>
-                Service Requested:
-                <li></li>
-                <li></li>
-                <p></p><input type="checkbox" id="test5" />
-                <label for="test5">Primary Potency</label></li>
-                <li></li>
-                <p></p><input type="checkbox" id="test6" />
-                <label for="test6">Primary Terpene Testing</label></li>
-                <li></li>
-                <p></p><input type="checkbox" id="test7" />
-                <label for="test7">Residual Solvents Testing</label></li>
-                <li></li>
-                <a href="#!" id="stag" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Show Prices</a>
-                <li></li>
-                <ul id="staggered-test" class="stag">
-                    <li class="price">Primary Potency: $40</li>
-                    <li class="price">Primary Terpene Testing: $70</li>
-                    <li class="price">Residual Solvents Testing: $70</li>
-                </ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                Sample Deposited:
-                <li>
-                    <p></p><input type="text" name="sample"></li>
-                <li></li>
-                Phone:
-                <li><input type="text" name="phone"></li>
-                <li><button class="table-one-btn">Submit</button></li>
-            </form>
+        <!--  -->
+        <!-- body -->
+        <!--  -->
+        <ul id="tabs-swipe-demo" class="tabs">
+            <li id="tab1" class="tab col s3"><a href="#test-swipe-1">Account Information</a></li>
+            <li id="tab2" class="tab col s3"><a class="active" href="#test-swipe-2">Change Password</a></li>
+            <li id="tab3" class="tab col s3"><a href="#test-swipe-3">Tests</a></li>
         </ul>
+        <div id="test-swipe-1" class="col s12 blue">
+            <ul>
+                <h5>Admin Account Settings</h5>
+                <li><a href="http://">Create An Account</a></li>
+                <li>Test Results: </li>
+                <li>Sales: </li>
+                <li>User Information: </li>
+                <li>Member Since: </li>
+            </ul>
+        </div>
+        <div id="test-swipe-2" class="col s12 red">
+            <h5>Change Password</h5>
+            <ul>
+                <br>
+                <li>Old Password</li>
+                <li>
+                    <input></input>
+                </li>
+                <li>New Password: </li>
+                <li>
+                    <input></input>
+                </li>
+                <li>Verify New Password: </li>
+                <li>
+                    <input></input>
+                </li>
+            </ul>
+        </div>
+        <div id="test-swipe-3" class="col s12 green">
+            <h5>Test History</h5>
+            <ul>
+                <li>Test Type:</li>
+                <li>Test Result: </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--  -->
+        <!-- footer -->
+        <!--  -->
         <div class="row foot">
             <div class="col l4 four">
                 <strong>Connect</strong>
@@ -153,8 +144,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Modal Structure -->
     <div id="modal1" class="modal modal-fixed-footer hoverable">
         <div class="modal-content">
@@ -197,6 +186,6 @@
     <script type="text/javascript" src="../js/materialize.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="mainJS/cpl.js"></script>
-    </body>
+</body>
 
 </html>
